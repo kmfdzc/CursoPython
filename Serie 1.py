@@ -12,7 +12,7 @@ print (a + b)
 #Ejercicio 2: Imprimir a^b
 A = 2
 B = 0
-print(A^B)
+print(A**B)
 
 #Ejercicio 3: Imprimir los años que le faltan al usuario para llegar a 100
 edad = input()
@@ -70,8 +70,8 @@ print("Ingresa X2")
 X2 = input()
 print("Ingresa Y2")
 Y2 = input()
-distancia1 = ((X1 ^ 2) + (Y1 ^ 2)) ** 2
-distancia2 = ((X2 ^ 2) + (Y2 ^ 2)) ** 2
+distancia1 = ((X1 ^ 2) + (Y1 ^ 2)) ** 0.5
+distancia2 = ((X2 ^ 2) + (Y2 ^ 2)) ** 0.5
 if distancia1 < distancia2:
     print("El punto ", X1, ",", Y1, " es el más cercano al origen")
 elif distancia2 < distancia1:
@@ -173,7 +173,7 @@ while True:
    puntoX = input()
    print("Ingresa Y")
    puntoY = input()
-   distancia = ((puntoX ^ 2) + (puntoY ^ 2)) ** 2
+   distancia = ((puntoX ^ 2) + (puntoY ^ 2)) ** 0.5
    if distancia > 10:
        break
 
